@@ -1,0 +1,18 @@
+[user]
+	name = nate stemen
+	email = nate@stemen.email
+	useConfigOnly = true
+[alias]
+	s = status
+	d = diff
+	comall = commit -a
+	b = branch
+	co = checkout
+	cob = checkout -b
+	undo1 = reset --hard HEAD~1
+    cp = cherry-pick
+[push]
+	default = current
+
+[includeIf "gitdir:~/work/"]
+    path = ~/work/.gitconfig
